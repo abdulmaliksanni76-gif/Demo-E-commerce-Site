@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern-Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Modern Shop</h2>
+            <input type="text" placeholder="Search for products, brands and categories">
+        <div class="icons">
+            <span><a href="wishlist.html"></a><i class="fa-regular fa-heart"></i></span>
+            <span><a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            
+            <h3>CATEGORIES</h3>
+            <ul>
+                <li>All Products</li>
+                <li><a href="electronincs.html"></a>Electronics</li>
+                <li><a href="Fashion.html"></a>Fashion</li>
+                <li><a href="Beauty.html"></a>Beauty</li>
+                <li><a href="Living.html"></a>Home & Living</li>
+            </ul>
+
+            <div class="price-range">
+                <h3>Price Range</h3>
+                <div>
+                    <label>
+                        <input type="radio" name="price"> Under ₦10,000
+                    </label> <br>
+                    <label>
+                        <input type="radio" name="price"> ₦10,000 - ₦50,000
+                    </label> <br>
+                    <label>
+                        <input type="radio" name="price"> Above ₦50,000
+                    </label>
+                    
+                </div>
+            </div>
+
+        </aside>
+        <main class="main">
+            <section class="hero">
+                <div class="hero-div">
+                    <div class="content">
+                        <button>LIMITED OFFER</button>
+                        <h1>UPGRADE YOUR <br>LIFESYLE.</h1>
+                        <p>Get the best deals on premium gadgets and <br>
+                            fashion trends only at Modern Shop.</p>
+                        <a href="#products"><button class="hero-btn">Browse Categories</button></a>
+                </div>
+                    
+                </div>
+            </section>
+            <section class="product-cards" id="products">
+                <h2>All Product</h2>
+                <div class="cards-group">
+                    <div class="cards">
+                        <img src="smart watch.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">ELECTRONICS</p>
+                        <p>Premium Wireless Headphones</p>
+                        <h2>₦40,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="cards">
+                        <img src="headset2.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">ELECTRONICS</p>
+                        <p>Minimalist Smart Watch V2</p>
+                        <h2>₦30,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="cards">
+                        <img src="Face serum.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">BEAUTY</p>
+                     <p>Organic Glow Facial Serum</p>
+                        <h2>₦28,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="product-cards">
+                <div class="cards-group">
+                    <div class="cards">
+                        <img src="Monitor.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">FASHION</p>
+                        <p>City Walker Leather Show</p>
+                        <h2>₦35,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="cards">
+                        <img src="Espresso.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">HOME</p>
+                        <p>Matte Black Espresso Machine</p>
+                        <h2>₦89,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="img-container">
+                        <img src="shoes.jpg.jpeg" width="200px" height="200px" alt="item">
+                        <p class="tags">Electronics</p>
+                        </div>
+                        <p>Fast 144Hz Gaming Monitor</p>
+                        <h2>₦190,000</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer"> 
+        <h2>MODERN SHOP</h2> 
+        <p>The best shopping experience on the web</p>
+        <span >&copy; 2026. MODERN SHOP. ALL RIGHT RESERVED</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

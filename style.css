@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+body {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFFDD0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar input {
+    width: 60%;
+    border-color: lightslategray;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+.navbar input:focus {
+    outline: 2px solid orange;
+}
+
+.navbar h2 {
+    color: orange;
+    background-color: transparent;
+    font-weight: 900;
+}
+
+.navbar .icons{
+    background: none;    
+}
+
+.navbar .icons span i{
+    background-color: none;
+    color: #f7903b;
+    border: orange;
+    background-color:#FFFDD0;
+    padding: 10px;
+    cursor: pointer;
+    transition: o.3s ease;
+}
+
+.navbar .icons span i:hover {
+    transform: translateY(2px);
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100%;
+    background-color: white;
+    min-height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border-right: 1px solid  #eee;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.07); 
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: larger;
+    color: lightslategray;
+}
+.sidebar ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 15px ;
+}
+
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar li:hover{
+    background-color: #fffbdc;
+    border-radius: 8px;
+    padding: 10px;
+    color: orange;
+}
+
+.price-range {
+    margin-top: 60px;
+}
+
+.price-range label {
+    padding-top: 15px;
+    background: none;
+}
+
+.main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero-div {
+    background: #f7903b;
+    background: linear-gradient(90deg, rgba(247, 144, 59, 1) 0%, rgba(219, 46, 46, 1) 64%, rgba(252, 176, 69, 1) 99%);
+    width: 1000;
+    border-radius: 20px;
+    margin: 20px 15px 0 20px ;
+}
+
+
+.content {
+    background: transparent;
+    padding: 50px 0 50px 50px;
+}
+
+
+.hero-div button {
+    padding: 5px 10px;
+    font-weight:700;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+.hero-div h1 {
+    background: transparent;
+    color: white;
+    margin: 20px 0 20px 0 ;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero-div p {
+    background: transparent;
+    color: white;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.hero-div .hero-btn {
+    padding: 18px 31px;
+    background-color: #fff;
+    color: orangered;
+    font-weight: 800;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-div .hero-btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}  
+
+.product-cards {
+    width: 100%;
+    margin: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0px;
+}
+
+.product-cards .cards-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 30px;    
+    margin-right: 50px;
+}
+
+.product-cards .cards-group img {
+    width: 290px;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: -20px -50px;
+    margin: -5px -20px -20px;
+}
+
+.tags {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 15px;  
+    background: transparent;
+    color: orangered;
+}
+
+.product-cards .cards-group .cards {
+    /* display: flex; */
+    width: 250px;
+    height: 450px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.product-cards .cards-group .cards:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4) ;
+}
+
+.product-cards .cards-group .cards h2{
+    margin-top: 10px;
+    font-weight: 850;
+}
+
+.product-cards .cards-group .cards p {
+    padding-top: 10px;
+    background-color: transparent;
+    text-align: left;
+}
+
+
+.cards button {
+    width: 100%;
+    padding: 12px 30px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.cards button:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: #FFFDD0;
+    height: 200px;
+    text-align: center;
+}
+
+.footer h2 {
+    background: none;
+    padding-top: 40px;
+    color: orangered;
+    font-weight: 900;
+}
+
+.footer p {
+    background: none;
+    padding: 20px 0 30px 0;
+}
+
+.footer span {
+    background: none;
+    color: lightslategray;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column; /* Stack sidebar on top of main */
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .price-range {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product-cards .cards-group {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        margin-right: 0;
+        padding: 0 10px;
+        gap: 25px;              
+    }
+
+    .product-cards .cards-group .cards {
+        width: 90%;            
+        height: auto;           
+        margin: 0 auto;         
+    }
+
+    .product-cards .cards-group img {
+        width: 100%;            
+        height: auto;          
+    }
+    
+    .product-cards h2 {
+        text-align: center;     
+        margin-bottom: 20px;
+    }
+}
